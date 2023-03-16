@@ -28,7 +28,7 @@ Copy the files to the respective locations according to the paths listed below:
 
 Or just replace the above operation with run script
 ```
-	bash run-ansible.sh
+  bash run-ansible.sh
 ```
 After installation of the files run
 
