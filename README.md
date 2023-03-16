@@ -31,6 +31,10 @@ After installation of the files run
 ```
   systemd-hwdb update
 ```
+if failed,try
+```
+  sudo systemd-hwdb update
+```
 
 This will update th hwdb to allow the accelerometer and keyboard to work correctly
 
