@@ -57,14 +57,3 @@ Run the following commands:
   sudo apt remove pipewire-alsa
 ```
 
-TO INSTALL PULSEAUDIO ON FEDORA
-
-```
-  sudo dnf swap --allowerasing pipewire-pulseaudio pulseaudio
-  
-  sudo dnf swap wireplumber pipewire-media-session
-  
-  sudo dnf swap pipewire-jack-audio-connection-kit jack-audio-connection-kit
-  
-  sudo dnf remove pipewire-alsa
-```
