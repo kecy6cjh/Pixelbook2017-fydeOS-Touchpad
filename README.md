@@ -26,7 +26,7 @@ Copy the files to the respective locations according to the paths listed below:
   /usr/lib/udev/hwdb.d/61-eve-keyboard.hwdb
 ```
 
-Or just replace the above operation with run script
+Or  replace the above operation just run script
 ```
   bash run-ansible.sh
 ```
