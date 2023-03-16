@@ -1,4 +1,4 @@
-Do Work On Ubuntu-22.04.2-LTS-x86_64
+Works On Ubuntu-22.04.2-LTS-x86_64
 
 Installing ALSA drivers and configuration files for the Pixelbook (Eve) Under Linux:
 
