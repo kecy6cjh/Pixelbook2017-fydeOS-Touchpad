@@ -26,6 +26,10 @@ Copy the files to the respective locations according to the paths listed below:
   /usr/lib/udev/hwdb.d/61-eve-keyboard.hwdb
 ```
 
+Or just replace the above operation with run script
+```
+	bash run-ansible.sh
+```
 After installation of the files run
 
 ```
@@ -56,4 +60,3 @@ Run the following commands:
   
   sudo apt remove pipewire-alsa
 ```
-
