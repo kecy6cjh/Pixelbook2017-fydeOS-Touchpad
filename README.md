@@ -1,12 +1,22 @@
 
 
-### 引言
+### 介绍
 解决Pixelbook2017安装fydeOS后驱动问题
 
 在以下环境测试：
 
 FydeOS18.0-SP1(Debian GNU/Linux 12 (bookworm) x86_64).[FydeOS](https://fydeos.com/)
 
+### 准备工作
+1. 开启开发者模式.[开发者模式指南](https://fydeos.com/question/enable-developer-mode/)
+2. 禁用根文件系统验证. [禁用根文件系统验证](https://fydeos.com/docs/knowledge-base/getting-started/disable-rootfs-verification)
+3. 重启后将目录挂载为可读写：
+    - 同时按下 `Control + Alt + T`键
+    - 输入 `shell` 回车
+    - 输入 `sudo -i` 以获取管理员权限
+    ```
+    mount -o remount rw /
+    ```
 
 ### 声卡
 将pixelbook-alsa下的文件按照目录顺序依次放到fydeos对应的目录下
