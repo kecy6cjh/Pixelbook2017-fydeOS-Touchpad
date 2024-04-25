@@ -19,7 +19,7 @@ FydeOS18.0-SP1.[FydeOS](https://fydeos.com/)
     ```
 
 ### 声卡
-将文件夹pixelbook-alsa下的文件按照目录顺序依次放到fydeos对应的目录下
+将文件夹pixelbook-alsa下的文件按照目录顺序依次放到fydeos对应的目录下，然后重启。
 
 ```
   /lib/firmware/9d71-GOOGLE-EVEMAX-0-tplg.bin
