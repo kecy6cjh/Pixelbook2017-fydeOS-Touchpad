@@ -5,7 +5,7 @@
 
 在以下环境测试：
 
-FydeOS18.0-SP1(Debian GNU/Linux 12 (bookworm) x86_64).[FydeOS](https://fydeos.com/)
+FydeOS18.0-SP1.[FydeOS](https://fydeos.com/)
 
 ### 准备工作
 1. 开启开发者模式.[开发者模式指南](https://fydeos.com/question/enable-developer-mode/)
