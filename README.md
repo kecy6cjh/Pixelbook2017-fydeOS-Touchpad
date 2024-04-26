@@ -1,7 +1,9 @@
 
 
 ### 介绍
-解决Pixelbook2017安装fydeOS后驱动问题
+解决Pixelbook2017安装fydeOS后驱动问题。
+
+Fork from [PixelbookLinux](https://github.com/lyncolnmd/PixelbookLinux)，所有文件均来自该仓库。
 
 在以下环境测试：
 
@@ -13,11 +15,16 @@ FydeOS18.0-SP1.[FydeOS](https://fydeos.com/)
 3. 重启后将目录挂载为可读写：
     - 同时按下 `Control + Alt + T`键
     - 输入 `shell` 回车
-    - 输入 `sudo -i` 以获取管理员权限
-    ```
-    mount -o remount rw /
-    ```
+    - 输入 `sudo -i` 以获取root权限
+    - 挂载目录为可读写:
+      ```
+      mount -o remount rw /
+      ```
+4. 拉取文件
 
+    ```
+    git clone https://github.com/unclemcz/Pixelbook2017-fydeOS.git
+    ```
 ### 声卡
 将文件夹pixelbook-alsa下的文件按照目录顺序依次放到fydeos对应的目录下，然后重启。
 
@@ -39,6 +46,23 @@ FydeOS18.0-SP1.[FydeOS](https://fydeos.com/)
   /usr/share/alsa/ucm2/conf.d/kbl-r5514-5663-/kbl-r5514-5663-.conf
 
 ```
-### 键盘
-待补充
+或者执行以下命令：
+
+执行本脚本前，请先获取root权限并挂载目录为可读写，否则脚本将无法执行成功
+```
+bash run-alsa.sh
+```
+**如果是在linux子系统拉取文件的话，需要将拉取的文件夹从linux子系统路径挪到fydeos系统路径下，再执行以上命令。** 
+
+最后重启系统。
+
+如果不知道如何执行脚本，请参考前面的做法，直接拷贝文件到对应目录下。
+
+### 其他问题
+我都不知道咋办。
+#### 键盘
+最大的问题是屏幕亮度调解按键错位，亮+按键实际为亮-，播放/暂停按键实际为亮+。
+#### 触摸板
+触摸板会飘，飘的厉害。
+
 
