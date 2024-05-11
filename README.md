@@ -59,9 +59,30 @@ bash run-alsa.sh
 如果不知道如何执行脚本，请参考前面的做法，直接拷贝文件到对应目录下。
 
 ### 其他问题
-我都不知道咋办。
+
 #### 键盘
-最大的问题是屏幕亮度调解按键错位，亮+按键实际为亮-，播放/暂停按键实际为亮+。
+参考:https://wiki.gentoo.org/wiki/Google_Pixelbook_(2017)
+
+将文件夹pixelbook-keyboard下的文件按照目录顺序放到fydeos对应的目录下，更新按键映射,然后重启。
+```
+/etc/udev/hwdb.d/61-eve-keyboard.hwdb
+```
+更新映射
+```
+udevadm hwdb --update && udevadm trigger
+```
+重启解决。
+
+或者执行以下命令：
+
+执行本脚本前，请先获取root权限并挂载目录为可读写，否则脚本将无法执行成功
+```
+bash run-key.sh
+```
+**如果是在linux子系统拉取文件的话，需要将拉取的文件夹从linux子系统路径挪到fydeos系统路径下，再执行以上命令。** 
+
+最后重启系统。
+
 #### 触摸板
 触摸板会飘，飘的厉害。
 
