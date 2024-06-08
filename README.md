@@ -84,6 +84,7 @@ bash run-key.sh
 最后重启系统。
 
 #### 触摸板
-触摸板会飘，飘的厉害。
-
-
+将文件夹pixelbook-touchpad下的文件放到fydeos的/etc/gesture/目录下，然后重启。
+```
+/etc/gesture/50-touchpad-cmt-eve.conf
+```
